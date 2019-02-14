@@ -9,12 +9,12 @@ select ucase(concat(first_name, ',', last_name)) as Actor_Name from actor;
 select actor_id, first_name, last_name from actor where first_name = 'Joe';
 
 /* 2b question */
-select * from actor where last_name LIKE '%GEN%';
-
-/* 2b question */
-select * from actor where last_name LIKE '%LI%' order by 3,2;
+select actor_id, first_name, last_name from actor where last_name LIKE '%GEN%';
 
 /* 2c question */
+select actor_id, first_name, last_name from actor where last_name LIKE '%LI%' order by 3,2;
+
+/* 2d question */
 select country_id, country from country where country 
 in ('Afghanistan','Bangladesh','China');
 
